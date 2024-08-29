@@ -10,11 +10,20 @@ class HomeViewModel : ViewModel() {
     private var _scoreTeamTwo = MutableLiveData<Int>()
     val scoreTeamTwo: MutableLiveData<Int> get() = _scoreTeamTwo
 
+    private var _finalResult = MutableLiveData<String>()
+    val finalResult: MutableLiveData<String> get() = _finalResult
+
     init {
         _scoreTeamOne.value = 0
         _scoreTeamTwo.value = 0
+        _finalResult.value = "Draw"
     }
 
+    fun checkFinalResult() {
+        if (scoreTeamOne.value == scoreTeamTwo.value) _finalResult.value = "Draw"
+        else if (_scoreTeamOne.value!! > _scoreTeamTwo.value!!) _finalResult.value = "team one is winner"
+        else if (_scoreTeamOne.value!! < _scoreTeamTwo.value!!) _finalResult.value = "team Two is winner"
+    }
 
     fun increaseTeamOneScore() {
         val currentScore = _scoreTeamOne.value
