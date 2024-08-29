@@ -7,13 +7,12 @@
     tools:context=".HomeFragment">
 
     <LinearLayout
+        android:id="@+id/ScoreBoard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/ScoreBoard"
         android:padding="10dp"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="wrap_content"
@@ -90,14 +89,31 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ScoreBoard"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/showResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Show Result"
-            app:layout_constraintTop_toBottomOf="@+id/ScoreBoard"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:width="150dp"
+            android:layout_marginRight="30dp"
             />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:width="150dp"
+            />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

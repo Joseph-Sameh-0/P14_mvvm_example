@@ -50,6 +50,11 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.resultFragment)
         }
 
+        binding.clear.setOnClickListener {
+            viewModel.clear()
+        }
+
+
 
 
     }
