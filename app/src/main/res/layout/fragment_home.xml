@@ -31,21 +31,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="team 1" />
+                    android:text="@string/team_1" />
 
                 <TextView
                     android:id="@+id/teamOneScore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="0" />
+                    android:text="@string/_0" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/increaseScoreTeamOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="increase score" />
+                    android:text="@string/increase_score" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -66,21 +66,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="team 1" />
+                    android:text="@string/team_2" />
 
                 <TextView
                     android:id="@+id/teamTwoScore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="0" />
+                    android:text="@string/_0" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/increaseScoreTeamTwo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="increase score"
+                    android:text="@string/increase_score"
 
                     />
             </LinearLayout>
@@ -102,16 +102,16 @@
             android:id="@+id/showResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Result"
+            android:text="@string/show_result"
             android:width="150dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
             />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clear"
+            android:text="@string/clear"
             android:width="150dp"
             />
     </LinearLayout>
